@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Tienda Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mi Tienda</h1>
+    <div class="cart">
+      🛒 Carrito: <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="admin-panel">
+      <h2>Panel de Administración</h2>
+      <form id="product-form">
+        <input type="text" id="product-name" placeholder="Nombre del producto" required />
+        <input type="number" id="product-price" placeholder="Precio" step="0.01" required />
+        <input type="url" id="product-image" placeholder="URL de imagen" required />
+        <button type="submit">Agregar producto</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section class="product-list" id="product-list">
+      <!-- Productos aquí -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Tienda Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
